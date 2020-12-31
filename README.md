@@ -75,13 +75,13 @@ This section is coming soon.
 
 
 <H1>FAQ</H1>
-<b>-What is Jamf?</b><br>
-Jamf is the king of Mac and iOS MDM solutions. See more here: https://www.jamf.com/><br>
+<b>-What is Jamf?</b>
+Jamf is the king of Mac and iOS MDM solutions. See more here: https://www.jamf.com
 
-<b>-What is jamfHelper?</b><br>
-https://www.modtitan.com/2016/10/demystifying-jamfhelper.html><br>
+<b>-What is jamfHelper?</b>
+https://www.modtitan.com/2016/10/demystifying-jamfhelper.html
 
-<b>What variables are available?</b><br>
+<b>What variables are available?</b>
 $4 is True/False for Self Service Mode. If you run this policy in Self Service, set the variable to True. This will bypass the deferral counter.
 $5 Deferral Counter. This will assign the default deferral limit.
 
