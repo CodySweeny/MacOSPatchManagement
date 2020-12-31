@@ -8,27 +8,26 @@
 SelfServiceMode="$4"
 
 #Checks for PKG Files.
-files=$(ls /Library/Application\ Support/JAMF/Waiting\ Room/*.pkg 2> /dev/null | wc -l)
-if [ "$files" != "0" ]
-then
+ls /Library/Application\ Support/JAMF/Waiting\ Room/ | grep ".pkg" > /dev/null
+if [ "$?" == "0" ]; then
 echo "PKG files exists."
 else
-	if [ $SelfServiceMode == true ]; then
-		NoAvailableUpdates=`/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper \
+	if [ $SelfServiceMode == "True" ]; then
+		AvailableUpdates=`/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper \
 		-windowType "utility" \
 		-lockHUD \
-		-title "Thank you" \
-		-heading "macOS Update Intiated" \
-		-description "Your Mac will automatically restart in just a moment" \
+		-title "No Updates Available" \
+		-heading "macOS Update" \
+		-description "No updates are currently available for your machine. Check back later" \
 		-icon "/Users/User/Public/brandingimage.png" \
 		-iconSize 120 \
 		-button1 "Okay" \
 		-defaultButton 1 \
 		-alignCountdown "right"`
 		echo "SelfServiceMode was set to true, prompting user that no updates are available."
+		exit 1
 	else
 		echo "No updates available. Self Service mode is set to false"
-		exit 1
 	fi
 fi
 
