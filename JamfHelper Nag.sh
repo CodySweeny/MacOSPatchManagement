@@ -13,6 +13,7 @@ if [ "$?" == "0" ]; then
 echo "PKG files exists."
 else
 	if [ $SelfServiceMode == "True" ]; then
+		#Reports that no updates are available
 		AvailableUpdates=`/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper \
 		-windowType "utility" \
 		-lockHUD \
@@ -25,12 +26,11 @@ else
 		-defaultButton 1 \
 		-alignCountdown "right"`
 		echo "SelfServiceMode was set to true, prompting user that no updates are available."
-		exit 1
+		exit 0
 	else
 		echo "No updates available. Self Service mode is set to false"
 	fi
 fi
-
 
 
 
@@ -62,7 +62,7 @@ SelfServiceTrue=`/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/
 		-button1 "Okay" \
 		-defaultButton 1 \
 		-alignCountdown "right"`
-		#sudo jamf policy -trigger InstallCached
+		sudo jamf policy -trigger InstallCached
 			elif [ $SelfServiceTrue == 2 ]; then
 			    echo "Cancel was pressed!"
 			fi
@@ -111,7 +111,7 @@ RESULT=`/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jam
 	-button1 "Okay" \
 	-defaultButton 1 \
 	-alignCountdown "right"`
-	#sudo jamf policy -trigger InstallCached
+	sudo jamf policy -trigger InstallCached
 	elif [ $RESULT == 2 ]; then
 	    # do button2 stuff
 	    echo "Defer was pressed!"
@@ -144,7 +144,7 @@ else
 		if [ $NoDefer == 0 ]; then
 	    echo "Update was pressed!"
 	    sleep 3
-	    #sudo jamf policy -trigger InstallCached
+	    sudo jamf policy -trigger InstallCached
 		fi
 
 	ThankYou=`/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper \
