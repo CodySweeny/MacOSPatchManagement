@@ -13,8 +13,8 @@ Most Jamf admins would agree that there is some frustration surround utilizing J
 For what it's worth, I am using Jamf's patch management to handle most of my 3rd party patching.
  
 <H1>Requirements</h1>
-1. Jamf Pro Instance
-2. A Mac or Mac VM for testing
+1. Jamf Pro Instance<br>
+2. A Mac or Mac VM for testing<br>
 3. A location on the Mac to save company branding.
 
 <H1>Configuration</H1>
