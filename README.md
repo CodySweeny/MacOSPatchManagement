@@ -23,6 +23,12 @@ You will need at minimum, 1 smart group, 2 policies and any packages from Apple 
 <h3>Packages</h3>
 Upload any package to your Jamf Pro instance. This same methodology can also be useful for required applications. I also upload a basic branding package that contains a company logo.
 
+<h4>1. Target Package</h4>
+The target package is whatever you wish to install. If it is an OS update it can be found at: https://support.apple.com/
+
+<h4>2. Branding Package</h4>
+This is a simple package created in Jamf's Composer containing a square company logo.
+
 <H3>Smart Groups</H3>
 Create a smart group with the target operating system build number. 
 
