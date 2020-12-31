@@ -39,7 +39,8 @@ We will need 3 policies. The first will cache the package, the second will alert
 
 <h4>1. Cache Package</h4>
 <img src="https://github.com/CodySweeny/MacOSPatchManagement/blob/main/images/Policy%20-%20Cache%20Package.png" width="1012">
-The naming of the policies can be whatever you would prefer. Keep it logical and making sense.
+The naming of the policies can be whatever you would prefer. Keep it logical. I use this policy to remove the deferral plist file.<br>
+<code>sudo rm /Library/Preferences/com.defer.deferralCount.plist</code>
 Scope: Smart group for machines 1 version behind my target.<br>
 Execution Frequency: Once Per Computer<br>
 Trigger: Check-In<br>
