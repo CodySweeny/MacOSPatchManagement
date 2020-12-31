@@ -45,7 +45,7 @@ Failure Rate: Allows for up to four failures<br>
 Limitations: N/A<br>
 
 <h4>2. JamfHelper Nag</h4>
-<img src="https://github.com/CodySweeny/MacOSPatchManagement/blob/main/images/Policy%20-%20Install%20Cached%20Package.png" width="900">
+<img src="https://github.com/CodySweeny/MacOSPatchManagement/blob/main/images/Policy%20-%20jamfHelper%20Nag.png" width="900">
 This policy will contain the script that will prompt the user for updates. I currently have it set to run once a day every with client side limitations scoped for MWF (Monday, Wednesday, Friday) after 2pm. <br>
 Scope: Smart group for machines 1 version behind my target.<br>
 Execution Frequency: Once per machine, per day<br>
@@ -54,6 +54,7 @@ Failure Rate: N/A<br>
 Limitations: 2pm into the evening.<br>
 
 <h4>3. Install Cached Package</h4>
+<img src="https://github.com/CodySweeny/MacOSPatchManagement/blob/main/images/Policy%20-%20Install%20Cached%20Package.png" width="900">
 Installation of all cached packages.<br>
 Scope: All Computers<br>
 Execution Frequency: Ongoing<br>
