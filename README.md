@@ -46,16 +46,16 @@ This section is coming soon.
 
 
 <H1>FAQ</H1>
--What is Jamf?
+-What is Jamf?<br>
 https://www.jamf.com/
 
--What is jamfHelper?
+-What is jamfHelper?<br>
 https://www.modtitan.com/2016/10/demystifying-jamfhelper.html
 
--Can this integrate with any other MDM solution?
+-Can this integrate with any other MDM solution?<br>
 Not at this time. This project utilizes a tool called jamfHelper to notify the end user. The same concept could function within Intune, Munki or any other MDM but you'll need a way to inform the user.
 
-Who gets the credit for this?
+Who gets the credit for this?<br>
 Not me! That's for sure! I have yet to find an implementation guide on this suject so I figured I would write my own. The idea originally comes froma JNUC 2020 session by William Smith called Planning your Patch Management Strategy.
 
 Please check out this video: https://youtu.be/RRoIHHiY9pQ
