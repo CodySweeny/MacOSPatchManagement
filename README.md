@@ -73,7 +73,7 @@ https://www.modtitan.com/2016/10/demystifying-jamfhelper.html
 Not at this time. This project utilizes a tool called jamfHelper to notify the end user. The same concept could function within Intune, Munki or any other MDM but you'll need a way to inform the user.
 
 <h4>Who gets the credit for this?</h4>
-Not me! That's for sure! I have yet to find an implementation guide on this suject so I figured I would write my own. The idea originally comes froma JNUC 2020 session by William Smith called Planning your Patch Management Strategy. I would encourage anyone interested in the subject to watch the video. I have yet to find a decent guide on this idea and so I decided to write my own (also as a way of storing the scripts used and because I'm a forgetful person at heart).
+Not me! That's for sure! I have yet to find an implementation guide on this suject so I figured I would write my own. The idea originally comes from a JNUC 2020 session by William Smith called Planning your Patch Management Strategy. I would encourage anyone interested in the subject to watch the video. I have yet to find a decent guide on this idea and so I decided to write my own (also as a way of storing the scripts used and because I'm a forgetful person at heart).
 
 
 Please check out this video: https://youtu.be/RRoIHHiY9pQ<br>
