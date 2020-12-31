@@ -1,6 +1,6 @@
 #!/bin/bash
 #Cody Sweeny
-#12/30/2020
+#12/31/2020
 #Jamf Helper Nag - Useful for OS Updates via policy.
 
 deferralPlist="/library/Preferences/com.Defer.deferralCount.plist"
