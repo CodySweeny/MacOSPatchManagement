@@ -18,10 +18,10 @@ For what it's worth, I am using Jamf's patch management to handle most of my 3rd
 3. A location on the Mac to save company branding.
 
 <H1>Configuration</H1>
-You will need at minimum, 1 smart group, 2 policies and any packages from Apple that you would like to deploy.
+You will need at minimum, 1 smart group, 3 policies and any packages that you would like to deploy.
 
 <h3>Packages</h3>
-Upload any package to your Jamf Pro instance. This same methodology can also be useful for required applications. I also upload a basic branding package that contains a company logo.
+Upload any package to your Jamf Pro instance. This same methodology can also be useful for required applications. I also upload a basic branding package that contains a company logo. The script looks for .pkgs so make sure your package is in that format.
 
 <h4>1. Target Package</h4>
 The target package is whatever you wish to install. If it is an OS update it can be found at: https://support.apple.com/
@@ -99,4 +99,4 @@ JNUC2020: https://www.jamf.com/events/jamf-nation-user-conference/2020/sessions/
 [ ] Smart group for all approved updates so that the nag doesn't have to be scoped per update.<br>
 [X] Self Service Mode to disable deferrals<br>
 [X] Deferral countdown<br>
-[ ] Add jamfHelper prompt to say no updates are available when self service mode is set to true<br>
+[X] Add jamfHelper prompt to say no updates are available when self service mode is set to true<br>
