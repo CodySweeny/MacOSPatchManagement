@@ -77,18 +77,18 @@ This section is coming soon.
 <H1>FAQ</H1>
 <b>-What is Jamf?</b>
 Jamf is the king of Mac and iOS MDM solutions. See more here: https://www.jamf.com
-
+<br>
 <b>-What is jamfHelper?</b>
 https://www.modtitan.com/2016/10/demystifying-jamfhelper.html
-
-<b>What variables are available?</b>
+<br>
+<b>-What variables are available?</b>
 $4 is True/False for Self Service Mode. If you run this policy in Self Service, set the variable to True. This will bypass the deferral counter.
 $5 Deferral Counter. This will assign the default deferral limit.
-
-<b>-Can this integrate with any other MDM solution?</b><br>
+<br>
+<b>-Can this integrate with any other MDM solution?</b>
 Not at this time. This project utilizes a tool called jamfHelper to notify the end user. The same concept could function within Intune, Munki or any other MDM but you'll need a way to inform the user.
-
-<h4>Who gets the credit for this?</h4>
+<br>
+<b>-Who gets the credit for this?</b>
 Not me! That's for sure! I have yet to find an implementation guide on this suject so I figured I would write my own. The idea originally comes from a JNUC 2020 session by William Smith called Planning your Patch Management Strategy. I would encourage anyone interested in the subject to watch the video. I have yet to find a decent guide on this idea and so I decided to write my own (also as a way of storing the scripts used and because I'm a forgetful person at heart).
 
 
