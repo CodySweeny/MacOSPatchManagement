@@ -8,7 +8,9 @@ CONTENTS OF THIS FILE
  * FAQ
  
  <H1>Introduction</H1>
-Most Jamf admins would agree that there is some frustration surround utilizing Jamf's patch management for MacOS updates. This is an alternative that leverages a similar concept in a cleaner way without any additional utilities or downloads.
+Most Jamf admins would agree that there is some frustration surround utilizing Jamf's patch management for MacOS updates. This is an alternative that leverages a similar concept in a cleaner way without any additional utilities or downloads.<br>
+
+For what it's worth, I am using Jamf's patch management to handle most of my 3rd party patching.
  
 <H1>Requirements</h1>
 1. Jamf Pro Instance
@@ -25,21 +27,36 @@ Upload any package to your Jamf Pro instance. This same methodology can also be 
 Create a smart group with the target operating system build number. 
 
 <H3>Policies</H3>
-We will need 3 policies. The first will archive or cache the package, the second will alert the user via JamfHelper, and the third will install.
+We will need 3 policies. The first will cache the package, the second will alert the user via JamfHelper, and the third will install.
 
-<h4>Cache Package</h4>
+<h4>1. Cache Package</h4>
 The naming of the policies can be whatever you would prefer. Keep it logical and making sense.
+Scope: Smart group for machines 1 version behind my target.
+Execution Frequency: Once Per Computer
+Trigger: Check-In
+Failure Rate: Allows for up to four failures
+Limitations: N/A
 
-<h4>JamfHelper Nag</h4>
-This policy will contain the script that will prompt the user for updates.
+<h4>2. JamfHelper Nag</h4>
+This policy will contain the script that will prompt the user for updates. I currently have it set to run once a day every with client side limitations scoped for MWF (Monday, Wednesday, Friday) after 2pm. 
+Scope: Smart group for machines 1 version behind my target.
+Execution Frequency: Once per machine, per day
+Trigger: Check-In
+Failure Rate: N/A
+Limitations: 2pm into the evening.
 
-<h4>Install Cached Package</h4>
+<h4>3. Install Cached Package</h4>
 Installation of all cached packages.
+Scope: All Computers
+Execution Frequency: Ongoing
+Trigger: Custom
+Failure Rate: N/A
+Limitations: N/A
 
 <h4>Logical Approaches to Policy Creation</h4>
   1. The first policy should be set to cache. Ideally this will be ran when the user first turns on their Mac. This is scoped to the target update group.<br>
   2. JamfHelper can be used in a variety of different ways. The options are endless and admitedly my approach is rudimentary at the moment. <br>
-  3. I am working on a better approach to scoping with this methodology so that multiple nag policies would not have to be created. Possibly a smart group containing all approved updates. Once the machine falls out of that group, it will no longer receive the MWF (Monday, Wednesday, Friday) nag to update until the next update is approved and in which case the machine would fall back in that group. Work in progress. 
+  3. I am working on a better approach to scoping with this methodology so that multiple nag policies would not have to be created. Possibly a smart group containing all approved updates. Once the machine falls out of that group, it will no longer receive the MWF nag to update until the next update is approved and in which case the machine would fall back in that group. Work in progress. 
   
 <h1>Troubleshooting</H1>
 This section is coming soon.
@@ -62,3 +79,8 @@ Not me! That's for sure! I have yet to find an implementation guide on this suje
 Please check out this video: https://youtu.be/RRoIHHiY9pQ<br>
 TalkingMoose Github: https://github.com/talkingmoose<br>
 JNUC2020: https://www.jamf.com/events/jamf-nation-user-conference/2020/sessions/
+
+
+<u>Cody's To Do List:</u>
+[ ] Add Logic to check waiting room first for file before proceeding with nag
+[ ] Smart group for all approved updates so that the nag doesn't have to be scoped per update.
