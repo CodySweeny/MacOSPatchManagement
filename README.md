@@ -81,6 +81,6 @@ TalkingMoose Github: https://github.com/talkingmoose<br>
 JNUC2020: https://www.jamf.com/events/jamf-nation-user-conference/2020/sessions/
 
 
-<u>Cody's To Do List:</u>
-[ ] Add Logic to check waiting room first for file before proceeding with nag
+<u>Cody's To Do List:</u><br>
+[ ] Add Logic to check waiting room first for file before proceeding with nag.<br>
 [ ] Smart group for all approved updates so that the nag doesn't have to be scoped per update.
