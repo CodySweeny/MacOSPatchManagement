@@ -6,6 +6,7 @@ CONTENTS OF THIS FILE
  * Configuration
  * Troubleshooting
  * FAQ
+ * To-Do List
  
  <H1>Introduction</H1>
 Most Jamf admins would agree that there is some frustration surround utilizing Jamf's patch management for MacOS updates. This is an alternative that leverages a similar concept in a cleaner way without any additional utilities or downloads.<br>
@@ -95,7 +96,7 @@ TalkingMoose Github: https://github.com/talkingmoose<br>
 JNUC2020: https://www.jamf.com/events/jamf-nation-user-conference/2020/sessions/
 
 
-<u>Cody's To Do List:</u><br>
+<H1>My To-Do List:</H1><br>
 [X] Add Logic to check waiting room first for file before proceeding with nag.<br>
 [ ] Smart group for all approved updates so that the nag doesn't have to be scoped per update.<br>
 [X] Self Service Mode to disable deferrals<br>
