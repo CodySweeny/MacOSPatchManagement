@@ -75,6 +75,10 @@ Jamf is the king of Mac and iOS MDM solutions. See more here: https://www.jamf.c
 <b>-What is jamfHelper?</b><br>
 https://www.modtitan.com/2016/10/demystifying-jamfhelper.html
 
+<b>What variables are available?</b><br>
+$4 is True/False for Self Service Mode. If you run this policy in Self Service, set the variable to True. This will bypass the deferral counter.
+$5 Deferral Counter. This will assign the default deferral limit.
+
 <b>-Can this integrate with any other MDM solution?</b><br>
 Not at this time. This project utilizes a tool called jamfHelper to notify the end user. The same concept could function within Intune, Munki or any other MDM but you'll need a way to inform the user.
 
@@ -88,7 +92,8 @@ JNUC2020: https://www.jamf.com/events/jamf-nation-user-conference/2020/sessions/
 
 
 <u>Cody's To Do List:</u><br>
-[ ] Add Logic to check waiting room first for file before proceeding with nag.<br>
+[X] Add Logic to check waiting room first for file before proceeding with nag.<br>
 [ ] Smart group for all approved updates so that the nag doesn't have to be scoped per update.
-[ ] Self Service Mode to disable deferrals
+[X] Self Service Mode to disable deferrals
 [X] Deferral countdown
+[ ] Add jamfHelper prompt to say no updates are available when self service mode is set to true
