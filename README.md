@@ -30,7 +30,8 @@ The target package is whatever you wish to install. If it is an OS update it can
 This is a simple package created in Jamf's Composer containing a square company logo.
 
 <H3>Smart Groups</H3>
-Create a smart group with the target operating system build number. 
+<img src="https://github.com/CodySweeny/MacOSPatchManagement/blob/main/images/Smart%20Group%20-%20OS%20Build.png" width="1012">
+Create a smart group with the target operating system build number and any other defining attributes.
 
 <H3>Policies</H3>
 We will need 3 policies. The first will cache the package, the second will alert the user via JamfHelper, and the third will install.
