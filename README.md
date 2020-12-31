@@ -8,7 +8,7 @@ CONTENTS OF THIS FILE
  * FAQ
  
  <H1>Introduction</H1>
- Jamf's patch management solution is wildly lacking in the area of maintaining Mac OS supplemental updates. As Jamfhelper is engaged in the native patch management, it can be utilized in a far better way by utilizing policies and smart groups to achieve your update cycle. 
+Most Jamf admins would agree that there is some frustration surround utilizing Jamf's patch management for MacOS updates. This is an alternative that leverages a similar concept in a cleaner way without any additional utilities or downloads.
  
 <H1>Requirements</h1>
 1. Jamf Pro Instance
