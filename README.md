@@ -37,15 +37,15 @@ This policy will contain the script that will prompt the user for updates.
 Installation of all cached packages.
 
 <h4>Logical Approaches to Policy Creation</h4>
-  1. The first policy should be set to cache. Ideally this will be ran when the user first turns on their Mac. This is scoped to the target update group.
-  2. JamfHelper can be used in a variety of different ways. The options are endless and admitedly my approach is rudimentary at the moment. 
+  1. The first policy should be set to cache. Ideally this will be ran when the user first turns on their Mac. This is scoped to the target update group.<br>
+  2. JamfHelper can be used in a variety of different ways. The options are endless and admitedly my approach is rudimentary at the moment. <br>
   3. I am working on a better approach to scoping with this methodology so that multiple nag policies would not have to be created. Possibly a smart group containing all approved updates. Once the machine falls out of that group, it will no longer receive the MWF (Monday, Wednesday, Friday) nag to update until the next update is approved and in which case the machine would fall back in that group. Work in progress. 
   
 <h1>Troubleshooting</H1>
-**Work in Progress**
-Doublecheck your scoping and sytax of JamfHelper script.
+This section is coming soon.
 
-FAQ
+
+<H1>FAQ</H1>
 -What is Jamf?
 https://www.jamf.com/
 
