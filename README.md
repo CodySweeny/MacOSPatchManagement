@@ -31,27 +31,27 @@ We will need 3 policies. The first will cache the package, the second will alert
 
 <h4>1. Cache Package</h4>
 The naming of the policies can be whatever you would prefer. Keep it logical and making sense.
-Scope: Smart group for machines 1 version behind my target.
-Execution Frequency: Once Per Computer
-Trigger: Check-In
-Failure Rate: Allows for up to four failures
-Limitations: N/A
+Scope: Smart group for machines 1 version behind my target.<br>
+Execution Frequency: Once Per Computer<br>
+Trigger: Check-In<br>
+Failure Rate: Allows for up to four failures<br>
+Limitations: N/A<br>
 
 <h4>2. JamfHelper Nag</h4>
-This policy will contain the script that will prompt the user for updates. I currently have it set to run once a day every with client side limitations scoped for MWF (Monday, Wednesday, Friday) after 2pm. 
-Scope: Smart group for machines 1 version behind my target.
-Execution Frequency: Once per machine, per day
-Trigger: Check-In
-Failure Rate: N/A
-Limitations: 2pm into the evening.
+This policy will contain the script that will prompt the user for updates. I currently have it set to run once a day every with client side limitations scoped for MWF (Monday, Wednesday, Friday) after 2pm. <br>
+Scope: Smart group for machines 1 version behind my target.<br>
+Execution Frequency: Once per machine, per day<br>
+Trigger: Check-In<br>
+Failure Rate: N/A<br>
+Limitations: 2pm into the evening.<br>
 
 <h4>3. Install Cached Package</h4>
-Installation of all cached packages.
-Scope: All Computers
-Execution Frequency: Ongoing
-Trigger: Custom
-Failure Rate: N/A
-Limitations: N/A
+Installation of all cached packages.<br>
+Scope: All Computers<br>
+Execution Frequency: Ongoing<br>
+Trigger: Custom<br>
+Failure Rate: N/A<br>
+Limitations: N/A<br>
 
 <h4>Logical Approaches to Policy Creation</h4>
   1. The first policy should be set to cache. Ideally this will be ran when the user first turns on their Mac. This is scoped to the target update group.<br>
@@ -84,3 +84,4 @@ JNUC2020: https://www.jamf.com/events/jamf-nation-user-conference/2020/sessions/
 <u>Cody's To Do List:</u><br>
 [ ] Add Logic to check waiting room first for file before proceeding with nag.<br>
 [ ] Smart group for all approved updates so that the nag doesn't have to be scoped per update.
+[X] Deferral countdown
