@@ -76,10 +76,10 @@ This section is coming soon.
 
 <H1>FAQ</H1>
 <b>-What is Jamf?</b><br>
-Jamf is the king of Mac and iOS MDM solutions. See more here: https://www.jamf.com/
+Jamf is the king of Mac and iOS MDM solutions. See more here: https://www.jamf.com/><br>
 
 <b>-What is jamfHelper?</b><br>
-https://www.modtitan.com/2016/10/demystifying-jamfhelper.html
+https://www.modtitan.com/2016/10/demystifying-jamfhelper.html><br>
 
 <b>What variables are available?</b><br>
 $4 is True/False for Self Service Mode. If you run this policy in Self Service, set the variable to True. This will bypass the deferral counter.
