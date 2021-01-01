@@ -54,6 +54,7 @@ Limitations: N/A<br>
 <h4>2. JamfHelper Nag</h4>
 <img src="https://github.com/CodySweeny/MacOSPatchManagement/blob/main/images/Policy%20-%20jamfHelper%20Nag.png" width="1012">
 This policy will contain the script that will prompt the user for updates. I currently have it set to run once a day every with client side limitations scoped for MWF (Monday, Wednesday, Friday) after 2pm. 
+
 <br>
 <b><u>Policy Parameters</u></b><br>
 Scope: Smart group for machines 1 version behind my target.<br>
@@ -65,8 +66,9 @@ Limitations: 2pm into the evening. Every Monday, Wednesday and Friday.<br>
 <h4>3. Install Cached Package</h4>
 <img src="https://github.com/CodySweeny/MacOSPatchManagement/blob/main/images/Policy%20-%20Install%20Cached%20Package.png" width="1012">
 Installation of all cached packages.
+
 <br>
-<b><u>Policy Parameters</u></b>
+<b>Policy Parameters</b><br>
 Scope: All Computers<br>
 Execution Frequency: Ongoing<br>
 Trigger: Custom<br>
