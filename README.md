@@ -109,7 +109,7 @@ JNUC2020: https://www.jamf.com/events/jamf-nation-user-conference/2020/sessions/
 
 <H1>My To-Do List:</H1><br>
 [X] Add Logic to check waiting room first for file before proceeding with nag.<br>
-[ ] Smart group for all approved updates so that the nag doesn't have to be scoped per update.<br>
+[X] Smart group for all approved updates so that the nag doesn't have to be scoped per update.<br>
 [X] Self Service Mode to disable deferrals<br>
 [X] Deferral countdown<br>
 [X] Add jamfHelper prompt to say no updates are available when self service mode is set to true<br>
