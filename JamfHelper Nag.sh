@@ -113,10 +113,10 @@ RESULT=`/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jam
 	-alignCountdown "right"`
 	sudo jamf policy -trigger InstallCached
 	elif [ $RESULT == 2 ]; then
-	    # do button2 stuff
 	    echo "Defer was pressed!"
 	            newDeferralsLeft=$((deferralsRemaining-1))
 	        defaults write "$deferralPlist" deferralsLeft -int $newDeferralsLeft
+		echo "$newDeferralsLeft deferrals remaining"
 	DeferMessage=`/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper \
 	-windowType "utility" \
 	-lockHUD \
