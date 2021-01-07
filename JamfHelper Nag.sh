@@ -29,6 +29,7 @@ else
 		exit 0
 	else
 		echo "No updates available. Self Service mode is set to false"
+		exit 0
 	fi
 fi
 
